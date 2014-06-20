@@ -2,6 +2,8 @@ html,
 body {
     height: 100%;
 /* The html and body elements cannot have any padding or margin. */
+    font-family: 'Lato';
+    text-rendering: optimizeLegibility;
 }
 .no-overflow {
     overflow: hidden;
@@ -26,9 +28,16 @@ td.prefix {
     vertical-align: top;
     padding: 1px 5px 1px 1px;
     white-space: pre;
-    border-right: 1px solid #444;
+    /* border-right: 1px solid #444; */
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 4px;
 }
 td.message {
+    display: inline;
+    word-wrap: break-word;
+    word-break: break-word;
     overflow: hidden;
     vertical-align: top;
     width: 100%;
@@ -45,6 +54,10 @@ td.message {
     -ms-hyphens: auto;
         hyphens: auto;
 
+}
+
+td.message div.plugin, td.message div.pluginToggle {
+    display: inline;
 }
 
 #readmarker {
@@ -304,6 +317,7 @@ input[type=text], input[type=password], #sendMessage {
     -webkit-transition:0.2 ease-in-out all;
     transition:0.2s ease-in-out all;
     -webkit-overflow-scrolling: touch; /* Native scroll on ios */
+    /* font-size: 14px; */
 }
 #bufferlines > table {
     margin-top: 35px;
@@ -311,11 +325,16 @@ input[type=text], input[type=password], #sendMessage {
 }
 tr.bufferline {
     line-height: 100%;
+    padding: 1px 0px;
+    display: block;
 }
 
 td.time {
-    padding: 1px 5px 1px 1px;
+    padding: 0px 5px 0px 1px;
     vertical-align: top;
+    border-collapse: separate;
+    border-spacing: 0px 2px;
+    display: inline;
 }
 
 .withnicklist {
