@@ -172,6 +172,11 @@ button.close:hover {
 /****************************/
 /* Weechat colors and style */
 /****************************/
+.line-chat_prefix_join span, .line-chat_prefix_join a,
+.line-chat_prefix_quit span, .line-chat_prefix_quit a {
+    color: #444;
+}
+
 /* style options, foreground */
 .cof-separator {
     color: #68b5d4;

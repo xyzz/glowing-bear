@@ -380,7 +380,8 @@ models.service('models', ['$rootScope', '$filter', 'bufferResume', function($roo
             tags: tags_array,
             highlight: highlight,
             displayed: displayed,
-            text: rtext
+            text: rtext,
+            kind: "line-" + prefix[0].attrs.name,
 
         };
 
