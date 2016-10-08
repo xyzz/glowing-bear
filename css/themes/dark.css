@@ -19,12 +19,6 @@ html {
     background-color: inherit;
 }
 
-.repeated-time .cob-chat_time,
-.repeated-time .cob-chat_time_delimiters {
-    background-color: transparent;
-    color: #333;
-}
-
 .nav-pills > li.active > a {
     background-color: #555;
 }
